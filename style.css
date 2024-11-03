@@ -1,0 +1,187 @@
+body, div, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: beige; /* beige */
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.0625em;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+#back-to-tutorial {
+    margin-left: 100px;
+}
+
+nav a {
+    position: relative;
+    top: 0;
+    padding: 10px 20px;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    color: #83C78E;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+nav a.active {
+    top: -4px;
+    background-color: #69C773;
+    color: #FFFFFF;
+    -webkit-box-shadow: 0 4px 0 0 #51a65f;
+    -moz-box-shadow: 0 4px 0 0 #51a65f;
+    box-shadow: 0 4px 0 0 #51a65f;
+}
+
+.slides-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.slide {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide .centered {
+    width: 60%;
+    margin: 200px auto 0;
+}
+
+.slide .centered h1 {
+    text-align: center;
+}
+
+.slide .centered p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#slide-1 {
+    background-color: #FFFFFF;
+}
+
+#slide-2 {
+    background-color: #45959b;
+}
+
+#slide-3 {
+    background-color: #778899;
+}
+
+#slide-4 {
+    color: #FFFFFF;
+    background-color: #291F37;
+}
+
+.go-prev, .go-next {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    z-index: 100; /* Ensure it's above the slides */
+}
+
+header h1{
+  color: white; /* Change the color as desired */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  letter-spacing: 1px; 
+  position: absolute;
+  left: 7.5%; /* Adjust the percentage as needed */
+}
+
+body {
+    font-family: system-ui;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .timer {
+      margin-top: 100px;
+  }
+    
+  .timer > svg {
+      width: 200px;
+      height: 200px;
+  }
+  
+  .timer > svg > circle {
+      fill: none;
+      stroke-opacity: 0.3;
+      stroke: #0d6efd;
+      stroke-width: 10;
+      transform-origin: center center;
+      transform: rotate(-90deg);
+  }
+  
+  .timer > svg > circle + circle {
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      stroke-linecap: round;
+      stroke-opacity: 1;
+  }
+  
+  .timer.animatable > svg > circle + circle {
+      transition: stroke-dashoffset 0.3s ease;
+  }
+  
+  .timer > svg > text {
+      font-size: 2rem;
+  }
+  
+  .timer > svg > text + text {
+      font-size: 1rem;
+  }
+  
+
+

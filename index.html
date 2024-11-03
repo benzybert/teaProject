@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Screen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<header>
+    <h1>TeaTok</h1>
+</header>
+
+    <div class="split-screen">
+        <div class="left-side">
+            <h2>Left Side</h2>
+            <p>This is the left side of the screen.</p>
+        </div>
+        <div class="right-side">
+            <h2>Right Side</h2>
+            <p>This is the right side of the screen.</p>
+        </div>
+    </div>
+
+<nav>
+    <ul>
+        <li><a href="#slide-1">Slide 1</a></li>
+        <li><a href="#slide-2">Slide 2</a></li>
+        <li><a href="#slide-3">Slide 3</a></li>
+        <li><a href="#slide-4">Slide 4</a></li>
+    </ul>
+</nav>
+  
+  '' first div is sliders
+  <div class="slides-container">
+      <div class="slide" id="slide-1">
+          <div class="centered">
+              <h1>Fullscreen slides with GSAP</h1>
+              <p>Let's go to the <span class="go-next">next slide</span>.</p>
+          </div>
+      </div>
+      <div class="slide" id="slide-2">
+          <div class="centered">
+              <h1>It is so easy to navigate through slides</h1>
+              <p>You can go back to <span class="go-prev">previous slide</span> or go to the <span class="go-next">next slide</span>.</p>
+          </div>
+      </div>
+      <div class="slide" id="slide-3">
+          <div class="centered">
+              <h1>Use mouse wheel</h1>
+  
+              <p>No, really. Try to scroll up and down with the mouse wheel to switch between slides.</p>
+          </div>
+      </div>
+      <div class="slide" id="slide-4">
+          <div class="centered">
+              <h1>... Or use keyboard arrows</h1>
+              <p>You go to previous and next slide, using up and down keyboard arrows.</p>
+          </div>
+      </div>
+  </div>
+
+ <!-- Tea Journal:
+
+  Users can log their daily tea intake, including the type of tea, brewing time, and rating.
+  Data is stored locally using browser storage or a backend database.
+  A visual representation of tea consumption patterns can be displayed using charts or graphs.
+  Tea Recommendations:
+  
+  A recommendation system based on user preferences and past consumption.
+  Users can input their mood or desired effect, and the app suggests suitable teas.
+  Tea Timer:
+  
+  A customizable timer to brew tea to perfection.
+  Users can set specific brewing times for different tea types.
+  Tea Encyclopedia:
+  
+  A comprehensive database of teas from around the world.
+  Information includes origin, flavor profile, health benefits, and brewing tips.
+  Technical Implementation:
+  
+  Frontend:
+  HTML: Structure the app's layout, including forms, buttons, and data display elements.
+  CSS: Style the app with a clean and visually appealing design.
+  JavaScript: Handle user interactions, data manipulation, and dynamic updates to the DOM.
+  React: Build reusable components for the app's interface, manage state, and optimize performance.
+  Backend (optional):
+  Node.js and Express.js: Create a server to handle user authentication, data storage, and API endpoints.
+  Database: Use a database like MongoDB or PostgreSQL to store user data and tea information.
+  Version Control:
+  Git: Track changes to the codebase, collaborate with other developers, and manage different project versions.
+
+-->
+  ''tea timer
+
+  <h2>Time Left</h2>
+
+  
+<div class="timer animatable">
+  <svg>
+    <circle cx="50%" cy="50%" r="90"/>
+    <circle cx="50%" cy="50%" r="90" pathLength="1" />
+    <text x="100" y="100" text-anchor="middle"><tspan id="timeLeft"></tspan></text>
+    <text x="100" y="120" text-anchor="middle">seconds</text>
+  </svg>
+</div>
+
+
+</body>
+</html>
+
+
+
